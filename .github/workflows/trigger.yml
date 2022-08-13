@@ -6,7 +6,7 @@ on:
     types: [dispatch-test]
 
 jobs:
-  receive-repository-dispatch:
+  triggered-from-other-repo:
     runs-on: ubuntu-latest
     steps:
       - name: Receive
