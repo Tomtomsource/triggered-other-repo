@@ -11,4 +11,5 @@ jobs:
     steps:
       - name: Receive
         run: |
-          echo "start from other repo's trigger"
+          message=${{ github.event.client_payload.message }}
+          echo "message from other repo = $message"
