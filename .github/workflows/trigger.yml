@@ -1,0 +1,14 @@
+---
+name: Repository dispatch receive
+
+on:
+  repository_dispatch:
+    types: [dispatch-test]
+
+jobs:
+  receive-repository-dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Receive
+        run: |
+          echo "start from other repo's trigger"
